@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-family: sans-serif;
+}
+body {
+  background: #001;
+  display: flex;
+}
+.img-box{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #02cc3c;
+  flex-shrink: 0;
+}
+.img-box img{
+  width: 100%;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile h2{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.menu{
+  background: #123;
+  width: 80px;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  transition: .5s;
+}
+.menu:hover{
+  width: 260px;
+}
+.menu ul{
+  list-style: none;
+  position: relative;
+  height: 95%;
+}
+ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: .5s;
+}
+ul li a:hover , .active ,.data-info .box:hover ,td:hover{
+  background-color: #ffffff55;
+}
+
+.log-out{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.log-out a{
+  background-color: #a00;
+}
+ul li a i{
+  font-size: 30px;
+}
+/* ///////////////////// #Content /////////// */
+
+.content{
+width: 100%;
+margin: 10px;
+overflow: hidden;
+}
+.title-info{
+  background-color: #0481ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.data-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.data-info .box{
+  background: #123;
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.data-info .box i{
+  font-size: 40px;
+}
+.data-info .box .data{
+  text-align: center;
+}
+.data-info .box .data span{
+  font-size: 30px;
+}
+/* ///////////////////////// table ///////////*/
+table{
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+td,th{
+  background-color: #123;
+  height: 40px;
+  border-radius: 8px;
+}
+th{
+  background-color: #0080ff;
+}
+.price,.count{
+  padding: 6px;
+  border-radius: 6px;
+}
+.price{
+  background: green;
+}
+.count{
+  background: gold;
+  color: black;
+}

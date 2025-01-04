@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+body{
+  background-image: linear-gradient(to right, #01022d,#000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  background-image: linear-gradient(to right, #01022de5 30%,#00000088),
+  url(avatar.webp)
+  ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 94%;
+  height: 840px;
+}
+.container:hover{
+  background-image: linear-gradient(to right, #01022de5 30%,transparent),
+  url(avatar.webp)
+  ;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+ul{
+  width: 60%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul a{
+  border-bottom: 2px solid transparent;
+  transition: .5s;
+  font-size: 30px;
+}
+ul a:hover{
+  border-block-color: #eee;
+}
+
+.content{
+  width: 50%;
+  margin-top:250px ;
+  padding: 30px;
+}
+.content h2{
+  font-size: 100px;
+  text-transform: uppercase;
+  color: #eee;
+}
+.content p{
+  letter-spacing: 3px;
+  width: 350px;
+  padding: 20px 0;
+  color:#fff;
+  font-size: 20px;
+}
+.content button{
+  font-size: 30px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.content button:hover{
+  background-color: transparent;
+  border-color: #eee;
+  color: #fff;
+}

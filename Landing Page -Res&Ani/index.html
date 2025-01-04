@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Landing Page </title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-box">
+      <a href="#" class="logo">Cars.YT</a> 
+    </div>
+<div class="navbar-box">
+
+  <nav class="navbar" id="menuList">
+    <a href="#" style="--i:1" class="active">Home</a>
+    <a href="#" style="--i:2">Models</a>
+    <a href="#" style="--i:3">BestSellers</a>
+    <a href="#" style="--i:4">Contact</a>
+    <a href="#" style="--i:5">Feedback</a>
+  </nav>
+</div>
+  <div class="social-box">
+    <div class="social-media">
+      <a href="#" style="--i:1"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" style="--i:2"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" style="--i:3"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+  <div class="menu-icon">
+    <i class="fa-solid fa-bars fa-beat" onclick="toggleMenu()"></i>
+  </div>
+  </header>
+  <!-- ------- #Home Section . ------ -->
+   <section class="home">
+    <div class="home-content">
+      <h1>Test your driving</h1> 
+      <span></span>
+      <p> Each insurance carrier used a different formula for defining 
+        what it takes for someone to move from new driver status to 
+        experience driver status . <br> Drive the best with Car.YT .
+      </p>
+          <a href="#" class="btn">Discover</a>
+    </div>
+
+    <div class="home-img">
+      <div class="img-frame">
+        <img src="car.png" alt="">
+      </div>
+    </div>
+
+    <div class="frame-bg">
+    </div>
+   </section>
+
+   <script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = '0px'
+
+    function toggleMenu() {
+      if (menuList.style.maxHeight == '0px') {
+        menuList.style.maxHeight = '300px'
+      }
+      else {
+        menuList.style.maxHeight = '0px'
+      }
+    }
+   </script>
+
+</body>
+</html>
